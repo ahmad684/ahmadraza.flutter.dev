@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmad Raza | Flutter Developer</title>
+<meta name="description" content="Ahmad Raza — Flutter Developer building high-performance, scalable mobile apps for iOS & Android.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">A<span>R</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-small nav-cta">Hire Me <span class="icon-case">💼</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-text reveal-left">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1 class="hero-name">Ahmad <span class="grad-text">Raza</span></h1>
+      <h2 class="hero-role">
+        <span id="typedRole"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">I build high-performance, scalable, and beautiful mobile applications using Flutter &amp; Dart.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Hire Me <span class="icon-case">💼</span></a>
+        <a href="#projects" class="btn btn-outline">View Projects <span class="icon-rocket">🚀</span></a>
+      </div>
+      <div class="hero-meta">
+        <span class="status-dot"></span> Available for work
+        <div class="social-row">
+          <a href="https://github.com/ahmadraza" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.2.67.8.56A10.53 10.53 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/ahmadraza" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="https://wa.me/923123456789" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12.02 2C6.5 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.08L2 22l5.06-1.33A9.94 9.94 0 0 0 12.02 22C17.55 22 22 17.52 22 12S17.55 2 12.02 2Zm5.78 14.13c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.03.27-3.46-.73-2.9-1.2-4.76-4.15-4.9-4.34-.14-.2-1.16-1.55-1.16-2.95 0-1.4.73-2.08 1-2.36.24-.27.53-.33.7-.33h.5c.16 0 .38-.03.58.45.24.57.8 1.97.87 2.11.07.15.11.32.02.51-.09.2-.13.32-.26.49-.14.17-.29.38-.41.51-.14.14-.28.3-.12.58.16.28.72 1.2 1.55 1.94 1.07.96 1.96 1.26 2.24 1.4.28.14.44.12.6-.07.16-.2.68-.8.87-1.07.18-.28.36-.23.6-.14.24.1 1.55.73 1.82.86.27.14.45.2.51.32.07.13.07.71-.17 1.4Z"/></svg>
+          </a>
+          <a href="mailto:ahmadraza.dev@gmail.com" aria-label="Email" class="social-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1L19.8 6H4.2Zm15.8 1.4-7.4 5.8a1 1 0 0 1-1.2 0L4 7.4V18h16V7.4Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap reveal-right">
+      <div class="orbit-ring"></div>
+      <div class="orbit-ring ring-2"></div>
+      <img src="assets/profile.png" alt="Ahmad Raza portrait" class="hero-photo">
+      <div class="float-icon icon-flutter" style="--delay:0s">💠</div>
+      <div class="float-icon icon-code" style="--delay:1.2s">{ }</div>
+      <div class="float-icon icon-dart" style="--delay:2.1s">◆</div>
+      <div class="float-icon icon-mobile" style="--delay:0.6s">📱</div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="section-inner about-grid">
+    <div class="reveal-up">
+      <p class="eyebrow tag">About Me</p>
+      <h2 class="section-title">About Me</h2>
+      <p class="body-text">I'm a passionate Flutter developer with over 3 years of professional experience, working remotely with international clients. I specialize in building production-ready mobile applications with clean architecture and modern UI/UX.</p>
+      <p class="body-text">I have strong expertise in Firebase integration, REST APIs, Google Maps, and state management solutions like Riverpod, Bloc, Provider, and GetX.</p>
+    </div>
+    <div class="about-visual reveal-up">
+      <div class="phone-mock">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-logo">💠</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <p class="eyebrow tag center">My Skills</p>
+    <h2 class="section-title center">My Technical Skills</h2>
+    <div class="skills-grid" id="skillsGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <p class="eyebrow tag center">Services</p>
+    <h2 class="section-title center">What I Offer</h2>
+    <div class="services-grid" id="servicesGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section-alt" id="projects">
+  <div class="section-inner">
+    <p class="eyebrow tag center">Recent Projects</p>
+    <h2 class="section-title center">My Recent Projects</h2>
+    <div class="projects-list" id="projectsList">
+      <!-- injected by JS -->
+    </div>
+    <div class="view-all-wrap">
+      <a href="#" class="btn btn-outline">View All Projects <span>▤</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats-band reveal-up">
+  <div class="section-inner stats-grid">
+    <div class="stat-item"><span class="stat-icon">📄</span><span class="stat-num" data-target="3" data-suffix="+">0</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat-item"><span class="stat-icon">📋</span><span class="stat-num" data-target="25" data-suffix="+">0</span><span class="stat-label">Projects Completed</span></div>
+    <div class="stat-item"><span class="stat-icon">👤</span><span class="stat-num" data-target="20" data-suffix="+">0</span><span class="stat-label">Happy Clients</span></div>
+    <div class="stat-item"><span class="stat-icon">♥</span><span class="stat-num" data-target="100" data-suffix="%">0</span><span class="stat-label">Client Satisfaction</span></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="reveal-up">
+      <p class="eyebrow tag">Contact Me</p>
+      <h2 class="section-title">Let's Get In Touch</h2>
+      <p class="body-text">Have a project in mind? Let's discuss and build something amazing together.</p>
+      <ul class="contact-info">
+        <li><span class="ci-icon">✉</span><a href="mailto:ahmadraza.dev@gmail.com">ahmadraza.dev@gmail.com</a></li>
+        <li><span class="ci-icon">☎</span><a href="tel:+923123456789">+92 312 3456789</a></li>
+        <li><span class="ci-icon">📍</span><span>Pakistan</span></li>
+        <li><span class="ci-icon">in</span><a href="https://linkedin.com/in/ahmadraza" target="_blank" rel="noopener">linkedin.com/in/ahmadraza</a></li>
+        <li><span class="ci-icon">gh</span><a href="https://github.com/ahmadraza" target="_blank" rel="noopener">github.com/ahmadraza</a></li>
+      </ul>
+    </div>
+    <form class="contact-form reveal-up" id="contactForm">
+      <div class="form-row">
+        <label class="sr-only" for="fname">Your Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-row">
+        <label class="sr-only" for="femail">Your Email</label>
+        <input type="email" id="femail" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-row">
+        <label class="sr-only" for="ftype">Project Type</label>
+        <select id="ftype" name="projectType">
+          <option value="" disabled selected>Project Type</option>
+          <option>Mobile App Development</option>
+          <option>Firebase Integration</option>
+          <option>UI/UX Design</option>
+          <option>App Deployment</option>
+          <option>Bug Fixing / Optimization</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label class="sr-only" for="fmsg">Your Message</label>
+        <textarea id="fmsg" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">
+        <span class="btn-text">Send Message</span> <span class="icon-send">➤</span>
+      </button>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="cta-band reveal-up">
+  <div class="section-inner cta-inner">
+    <div>
+      <h3>Let's Build Something Amazing Together! 🚀</h3>
+      <p>I'm available for freelance and full-time remote work.</p>
+    </div>
+    <a href="#contact" class="btn btn-primary">Hire Me Now <span>→</span></a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>© <span id="year"></span> Ahmad Raza. All Rights Reserved.</p>
+    <p>Made with ♥ and Flutter 💠</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
