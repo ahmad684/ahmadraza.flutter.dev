@@ -1,9 +1,9 @@
 // ============ DATA ============
 const skills = [
-  { name: "Flutter", icon: "💠", pct: 95 },
-  { name: "Dart", icon: "🎯", pct: 90 },
+  { name: "Flutter", icon: "💠", pct: 98 },
+  { name: "Dart", icon: "🎯", pct: 98 },
   { name: "Firebase", icon: "🔥", pct: 90 },
-  { name: "REST APIs", icon: "🔌", pct: 88 },
+  { name: "REST APIs", icon: "🔌", pct: 100 },
   { name: "Riverpod", icon: "⚡", pct: 90 },
   { name: "Bloc", icon: "🧩", pct: 85 },
   { name: "Provider", icon: "🗂️", pct: 85 },
@@ -12,7 +12,7 @@ const skills = [
 
 const services = [
   { icon: "📱", title: "Full Mobile App Development", desc: "Cross-platform apps for Android & iOS using Flutter." },
-  { icon: "🔥", title: "Firebase Integration", desc: "Auth, Firestore, FCM, Storage and more." },
+  { icon: "🔥", title: "Firebase & API Integration", desc: "Auth, Firestore,API and more." },
   { icon: "🎨", title: "UI/UX Design in Flutter", desc: "Modern, clean and responsive UI with animations." },
   { icon: "🚀", title: "App Deployment", desc: "Play Store & App Store deployment with best practices." },
   { icon: "🛠️", title: "Bug Fixing & Optimization", desc: "Fix bugs and improve performance & user experience." },
@@ -22,32 +22,36 @@ const services = [
 const projects = [
   {
     icon: "🍽️",
-    title: "Restaurant Management App",
-    desc: "Multi-restaurant scalable system with Firebase backend, real-time order tracking, and analytics dashboard.",
-    tags: ["Flutter", "Firebase", "Provider"],
+    title: "Joos Restaurant Management & Delivery SuiteJoos Food Delivery Ecosystem (Business, Customer & Delivery Apps)",
+    desc: "Built a highly scalable multi-restaurant management platform using Firebase, Node.js, and Google Maps. The system includes real-time order tracking, location-based delivery, secure authentication, restaurant management, and an advanced analytics dashboard to streamline operations and enhance business performance",
+    tags: ["Flutter", "Firebase", "Getx","BluPay","Google Maps"],
   },
   {
-    icon: "🛵",
-    title: "Food Delivery App",
-    desc: "Live location tracking using Google Maps, secure payment integration, and smooth UI/UX.",
+    icon: "📅",
+    title: "HYR – Business Shift Management Platform ",
+    desc: "HYR is a comprehensive workforce and shift management platform consisting of two integrated mobile applications: a Business App and an Employee App. Businesses can create and publish available shifts, manage their workforce, monitor shift assignments, and track completion in real time. Employees can browse available shifts, accept opportunities that match their availability, receive instant updates, and mark shifts as completed upon finishing their work. Built with a scalable architecture, the platform streamlines shift scheduling, improves workforce coordination, and simplifies communication between businesses and employees.",
     tags: ["Flutter", "Google Maps", "Stripe"],
   },
   {
-    icon: "⚙️",
-    title: "Business App Generator",
-    desc: "Automated Flutter app duplication system with dynamic branding, configuration and Firebase auto-setup.",
+    icon: "✂️",
+    title: "TakeHair Barber Bussiness in France",
+    desc: "A professional barber booking platform that connects barbershops with customers. Barber businesses can register, manage their profiles, services, staff, schedules, and appointments, while customers can easily discover nearby barbershops, book appointments, select their preferred barber and time slot, and manage their bookings through a seamless, user-friendly experience.",
     tags: ["Flutter", "Firebase", "Dart"],
   },
   {
-    icon: "⏰",
-    title: "Alarm & Productivity App",
-    desc: "Clean architecture (MVVM) with local + Firebase sync, notifications and task scheduling.",
+    icon: "❤️",
+    title: "Shorts – Video Dating Platform",
+    desc: "Shorts is a TikTok-style dating platform where users discover potential matches through short video content. The app features swipe-based matching, real-time chat, video uploads, profile customization, notifications, and location-based discovery, delivering an engaging and interactive dating experience.",
     tags: ["Flutter", "Riverpod", "Firebase"],
   },
 ];
 
-const roles = ["Flutter Developer", "Mobile App Engineer", "Firebase Specialist", "UI/UX Enthusiast"];
-
+const roles = [
+  "Senior Flutter Developer",
+  "Cross-Platform Mobile Engineer",
+  "Firebase & REST API Specialist",
+  "Mobile App UI/UX Enthusiast",
+];
 // ============ RENDER ============
 function renderSkills() {
   const grid = document.getElementById("skillsGrid");
